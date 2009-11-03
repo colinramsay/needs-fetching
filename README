@@ -1,0 +1,16 @@
+Ruby mixin for open-uri to check to see if a url needs fetching based on the last time you fetched it and the last etag you got.
+
+WORK IN PROGRESS!
+
+Usage
+-----
+
+require 'open-uri'
+result = open("http://example.com")
+result.needs_fetching?(last_fetched_date, last_etag)
+
+Todo
+----
+
+- create gem
+- validate & improve specs
